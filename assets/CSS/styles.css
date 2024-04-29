@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Lato black";
+    src: url(../FONTS/lato-black-webfont.woff2) format('woff2'), 
+    url(../FONTS/lato-black-webfont.woff) format('woff');
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Lato regular";
+    src: url(../FONTS/lato-regular-webfont.woff2) format('woff2'), 
+    url(../FONTS/lato-regular-webfont.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.colonne {
+    columns: 3 3rem;
+    column-gap: 5rem;
+    column-fill: balance;
+    column-rule: groove 1rem greenyellow;
+}
+
+.colonne p {
+    font-family: "Lato regular";
+}
+
+h1 {
+    color: green;
+    font-variant: small-caps;
+    font-family: "Lato black";
+    font-size: 5rem;
+    column-span: all;
+}
+
+.colonne p:first-of-type {
+    margin-top: 0;
+}
+
+.colonne p:last-of-type {
+    margin-bottom: 0;
+}
+
+.footer p {
+    color: greenyellow;
+    font-family: "Lato regular";
+    column-width: 1;
+}
